@@ -1,0 +1,7 @@
+<%= simple_form_for(@job, html: { class: 'form-horizontal' }) do |f| %>
+    <%= f.input :inst_name, input_html: { class: 'form-control' } %>
+    <%= f.input :repair_type, collection: ["Repairs", "Maintenance", "Notes"], input_html: { class: 'form-control' } %>
+    <%= f.input :user_name, input_html: { class: 'form-control'} %>
+    <%= f.input :comment, input_html: { class: 'form-control'} %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>

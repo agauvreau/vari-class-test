@@ -1,0 +1,16 @@
+<div>
+    <p><%= @job.inst_name %></p>
+    <p><%= @job.user_name %></p>
+    <p><%= @job.repair_type %></p>
+    <p><%= @job.comment %></p>
+    <div class="col-md-6"> <!-- btn group -->
+        <div class="btn-group pull-right"> <!-- groups the button to the right for improved aesthetic -->
+            <%= link_to "Back", root_path, class:"btn btn-primary" %>
+            <%= link_to "Edit", edit_job_path, class:"btn btn-warning" %>
+            <!--The delete button is specific a bit here it sends the DELETE html method to the pin path -->
+            <%= link_to "Delete", job_path, method: :delete, data: { confirm: "Are you sure" }, class:"btn btn-danger" %>
+        </div>
+    </div>
+</div>
+
+<%= link_to "Cancel", root_path, class:"btn btn-warning" %>
