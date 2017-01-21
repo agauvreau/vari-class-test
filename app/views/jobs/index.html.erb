@@ -1,8 +1,11 @@
 <div>
-    <div class="well">
-        <% @jobs.each do |job| %>
-        <%= link_to job.inst_name, job %>
-        <%end%>
-    </div>
+    <% @jobs.each do |job| %>
+        <div class="well #{job.repair_type}">
+            <div>
+                <%= link_to job.inst_name, job %>
+            </div>
+        </div>
+    <%end%>
+        
 </div>
 <p>Find me in app/views/parts/index.html.erb</p>
