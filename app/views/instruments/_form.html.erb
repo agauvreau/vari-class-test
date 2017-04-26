@@ -1,0 +1,8 @@
+<%= simple_form_for(@instrument, html: { class: 'form-horizontal' }) do |f| %>
+    <%= f.input :name, input_html: { class: 'form-control' } %>
+    <%= f.input :inst_type, priority: ["Measuring"], collection: ["Measuring", "Non-Measuring"], input_html: { class: 'form-control' } %>
+    <%= f.input :maker, input_html: { class: 'form-control'} %>
+    <%= f.input :ident, input_html: { class: 'form-control'} %>
+    <%= f.input :model, input_html: { class: 'form-control'} %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>

@@ -1,9 +1,9 @@
 <div class="well col-md-8 col-md-offset-2">
     
     <div class="col-md-12">
-        <% @jobs.each do |job| %>
-            <div class="<%= job.repair_type%>">
-               <%= link_to job.inst_name, job %>
+        <% @instruments.each do |instrument| %>
+            <div>
+               <%= link_to instrument.name, instrument %>
             </div>
         <%end%>
     </div>    

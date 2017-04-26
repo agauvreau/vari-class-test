@@ -45,7 +45,7 @@ class JobsController < ApplicationController
     
     private
     def job_params
-        params.require(:job).permit(:inst_name, :repair_type, :user_name, :comment)
+        params.require(:job).permit(:name, :repair_type, :user_name, :comment)
     end
     
     def find_job
